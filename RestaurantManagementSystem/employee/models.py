@@ -11,3 +11,6 @@ class Waiter(models.Model):
     shift=models.CharField(max_length=250,choices=shift_choices)
     status_choices=(('free','Free'),('usy','Busy'))
     status=models.CharField(max_length=10,choices=status_choices,default='free')
+
+def __str__(self):
+    return self.name

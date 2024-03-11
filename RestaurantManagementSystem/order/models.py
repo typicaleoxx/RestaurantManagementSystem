@@ -9,3 +9,5 @@ class Order(models.Model):
     status_choices=(('preparing','Preparing'),('served','Served'))
     status=models.CharField(max_length=250,choices=status_choices)
     timestamp=models.DateTimeField()
+
+

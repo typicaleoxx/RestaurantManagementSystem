@@ -6,3 +6,6 @@ class Table(models.Model):
     capacity=models.IntegerField()
     status_choices=(('available','Available'),('reserved','Reserved'),('occupied','Occupied'))
     status=models.CharField(max_length=250,choices=status_choices)
+
+    def __str__(self):
+        return str(self.number)
