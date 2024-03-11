@@ -22,12 +22,9 @@
 - Provides CRUD functionalities for managing menu categories and items.
 
 ### Models
-- **Category**
+- **Menu**
   - `name` (CharField)
-
-- **MenuItem**
-  - `name` (CharField)
-  - `category` (ForeignKey, Category)
+  - `category` (CharField,choices)
   - `price` (DecimalField)
   - `description` (TextField)
 
@@ -37,7 +34,7 @@
 ### Models
 - **Order**
   - `table` (ForeignKey, Table)
-  - `items` (ManyToManyField, MenuItem)
+  - `items` (ManyToManyField, Menu)
   - `total_amount` (DecimalField)
   - `status` (CharField)
   - `timestamp` (DateTimeField)
