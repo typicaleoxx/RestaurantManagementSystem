@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     "order",
     "reception",
     "table",
-    'rest_framework'
+    "rest_framework",
+    "phonenumber_field",
 ]
 
 MIDDLEWARE = [
