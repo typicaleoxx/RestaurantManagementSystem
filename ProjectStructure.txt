@@ -38,6 +38,7 @@
   - `total_amount` (DecimalField)
   - `status` (CharField)
   - `timestamp` (DateTimeField)
+  - `waiter` (ForeignKey, Waiter)
 
 ## Employee Management App
 - Manages CRUD operations for employees, including waiters.
@@ -49,6 +50,7 @@
   - `phone_number` (CharField)
   - `shift` (CharField)
   - `status` (CharField)
+  - `orders` (ForeignKey, Order) 
 
 ## Reception App
 - Manages customer check-in, reservation handling, and bill settlement functionalities.
