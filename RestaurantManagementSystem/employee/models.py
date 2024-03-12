@@ -1,6 +1,6 @@
 from django.db import models
 """from phonenumber_field.modelfields import PhoneNumberField"""
-
+from order.models import Order
 # Create your models here.
 class Waiter(models.Model):
     name=models.CharField(max_length=250)
@@ -11,6 +11,6 @@ class Waiter(models.Model):
     shift=models.CharField(max_length=250,choices=shift_choices)
     status_choices=(('free','Free'),('usy','Busy'))
     status=models.CharField(max_length=10,choices=status_choices,default='free')
-
+    orders=models.ManyToManyField(Order, related_name='waiters',null=True)
 def __str__(self):
     return self.name

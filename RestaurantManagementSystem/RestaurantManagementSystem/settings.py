@@ -27,7 +27,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+AUTH_USER_MODEL='authentication.User'
+"""django ko usertable use nagari hamle custom user table use garne bhayera, we called a variable name AUTH_USER_MODEL in settings.py
+    AUTH_USER_MODEL="appkoname.tablename"
+    models.py lai chai call garirakhnu pardaina
+    """
 # Application definition
 
 INSTALLED_APPS = [
