@@ -11,6 +11,6 @@ class Waiter(models.Model):
     shift=models.CharField(max_length=250,choices=shift_choices)
     status_choices=(('free','Free'),('usy','Busy'))
     status=models.CharField(max_length=10,choices=status_choices,default='free')
-    orders=models.ManyToManyField(Order, related_name='waiters',null=True)
+    orders=models.ManyToManyField(Order, related_name='waiters')
 def __str__(self):
     return self.name
