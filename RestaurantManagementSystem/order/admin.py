@@ -2,7 +2,9 @@ from django.contrib import admin
 from .models import Order
 # Register your models here.
 class OrderAdmin(admin.ModelAdmin):
-    list_display=('id','table','get_items_list','total_amount','status','timestamp')
+    list_display=('id','table',
+                  'waiter',
+                  'get_items_list','total_amount','status','timestamp')
 
     def get_items_list(self, obj):
         return ", ".join([item.name for item in obj.items.all()])
