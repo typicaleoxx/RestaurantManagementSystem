@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-=v#y7jc0by5dn8p&e#_4+6l)#+7@z)8g6hb-y(ulwcusm-*!4-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 AUTH_USER_MODEL='authentication.User'
 """django ko usertable use nagari hamle custom user table use garne bhayera, we called a variable name AUTH_USER_MODEL in settings.py
