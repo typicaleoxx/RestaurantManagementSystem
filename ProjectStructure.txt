@@ -1,3 +1,30 @@
+modified all serializers
+Authentication App:
+
+Use Django's built-in authentication views for user registration, login, and password reset.
+These views are provided by Django itself and do not need to be explicitly implemented using Django REST Framework.
+Table Management App:
+
+Use generic views such as ListCreateAPIView for listing and creating tables.
+Depending on requirements, you may also consider using a viewset like ModelViewSet if you need additional actions or customization.
+Menu Management App:
+
+Use generic views or viewsets for managing menu categories and items.
+You can use ListCreateAPIView for listing and creating menu items, and RetrieveUpdateDestroyAPIView for updating and deleting menu items.
+Alternatively, you can use a ModelViewSet for more flexibility and additional actions.
+Order Management App:
+
+Use a viewset such as ModelViewSet for managing orders, as it provides default CRUD operations.
+You can customize the viewset to include additional actions like marking orders as completed or canceled.
+Employee Management App:
+
+Use a viewset like ModelViewSet for managing employees (e.g., waiters).
+This allows you to perform CRUD operations on employees and customize actions as needed.
+Reception App:
+
+Use generic views or viewsets for managing reservations and bills.
+For reservations, you can use ListCreateAPIView and RetrieveUpdateDestroyAPIView.
+For bills, you can use similar generic views or a viewset depending on the required functionality.
 # Project (Restaurant Management System)
 
 ## Authentication App
@@ -38,7 +65,7 @@
   - `total_amount` (DecimalField)
   - `status` (CharField)
   - `timestamp` (DateTimeField)
-  - `waiter` (ForeignKey, Waiter)
+
 
 ## Employee Management App
 - Manages CRUD operations for employees, including waiters.
