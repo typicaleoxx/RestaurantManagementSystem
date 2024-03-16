@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     "reception",
     "table",
     "rest_framework",
+    "rest_framework.authtoken",
 ]
 
 MIDDLEWARE = [

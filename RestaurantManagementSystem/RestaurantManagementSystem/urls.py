@@ -23,6 +23,7 @@ urlpatterns = [
     path('',include('order.urls')),
     path('',include('table.urls')),
     path('',include('employee.urls')),
+    path('',include('authentication.urls')),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('',include('reception.urls'))   
 ]

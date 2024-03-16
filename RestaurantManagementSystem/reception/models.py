@@ -10,9 +10,12 @@ class Reservation(models.Model):
     reservation_time = models.DateTimeField()
     status_choices = (("confirmed", "Confirmed"), ("canceled", "Canceled"))
     status = models.CharField(max_length=50, choices=status_choices)
-
+    def str(self):
+        return self.customer_name
 
 class Bill(models.Model):
     order = models.ForeignKey(Order, on_delete=models.SET_NULL, null=True)
     total_amount = models.DecimalField(max_digits=19, decimal_places=2)
     paid = models.BooleanField()
+    def str(self):
+        return str(self.order)
