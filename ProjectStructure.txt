@@ -22,7 +22,10 @@ Use a viewset like ModelViewSet for managing employees (e.g., waiters).
 This allows you to perform CRUD operations on employees and customize actions as needed.
 Reception App:
 
-Use generic views or viewsets for managing reservations and bills.
+Use generic views or viewsets for managing reservations and 
+'
+
+bills.
 For reservations, you can use ListCreateAPIView and RetrieveUpdateDestroyAPIView.
 For bills, you can use similar generic views or a viewset depending on the required functionality.
 # Project (Restaurant Management System)
