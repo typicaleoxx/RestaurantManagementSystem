@@ -8,8 +8,14 @@ from rest_framework import status, generics
 from rest_framework.authtoken.models import Token
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from .models import User
-
+from .serializers import GroupSerializer
+from django.contrib.auth.models import Group
+from rest_framework.viewsets import ModelViewSet
 # Create your views here.
+class GroupViewSet(ModelViewSet):
+    queryset = Group.objects.all()
+    serializer_class = GroupSerializer
+    permission_classes = [AllowAny]
 
 
 class UserRegistrationView(APIView):
