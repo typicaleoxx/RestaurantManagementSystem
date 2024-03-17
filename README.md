@@ -69,7 +69,17 @@ Contributions and feedback are welcome! If you have suggestions for improvements
 
 This project is licensed under the GNU General Public License v3.0. See the LICENSE file for details.
 
+## Screenshot
+
+**Menu Management App**
 ![Menu Screenshot](screenshots/menu.png)
+<br>
+**Order Management App**
 ![Order Screenshot](screenshots/order.png)
+<br>
+**Table Management App**
 ![Table Screenshot](screenshots/table.png)
+<br>
+**User Management App**
 ![User Screenshot](screenshots/user.png)
+<br>
