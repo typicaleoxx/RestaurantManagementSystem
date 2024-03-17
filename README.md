@@ -2,7 +2,7 @@
 
 ## Description
 
-The Restaurant Management System project is a Django backend application,built using Django and Django REST Framework, designed to streamline restaurant operations. It includes modules for menu management, order processing, table management, and employee management.
+The Restaurant Management System project is a Django backend application, built using Django and Django REST Framework , designed to streamline restaurant operations. It includes modules for menu management, order processing, table management, and employee management.
 
 ## Key Features
 
@@ -55,7 +55,7 @@ The Restaurant Management System project is a Django backend application,built u
 
 ## Possible Updates or Contributions
 
-- Add more features and functionalities to enhance the hotel management system.
+- Add more features and functionalities to enhance the restaurant management system.
 - Improve the user interface for better usability and aesthetics.
 - Optimize code for performance and scalability.
 - Implement additional security measures to protect sensitive data.
