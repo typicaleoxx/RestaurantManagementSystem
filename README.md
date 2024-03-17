@@ -69,11 +69,7 @@ Contributions and feedback are welcome! If you have suggestions for improvements
 
 This project is licensed under the GNU General Public License v3.0. See the LICENSE file for details.
 
-<<<<<<< HEAD
-- **Table Management**: Allows managing restaurant tables including assigning capacities and tracking availability.
-- **Menu Management**: Facilitates the creation and management of menu items and categories.
-- **Order Management**: Enables placing and tracking orders, managing order items, and calculating total amounts.
-- **Employee Management**: Provides functionalities for managing employees such as waiters
-
-=======
->>>>>>> 7b970dd0f259651ebe5de6f6715021eba2863b55
+![Menu Screenshot](screenshots/menu.png)
+![Order Screenshot](screenshots/order.png)
+![Table Screenshot](screenshots/table.png)
+![User Screenshot](screenshots/user.png)
