@@ -1,43 +1,43 @@
 # Project (Restaurant Management System)
 
 ## Authentication App
-- Manages user authentication functionalities such as registration, login, and password reset.
+- Manages user authentication functionalities such as registration, login.
 
 ### Models
 - **User**
-  - `username` (CharField)
-  - `email` (EmailField)
-  - `password` (CharField)
+  - username (CharField)
+  - email (EmailField)
+  - password (CharField)
 
 ## Table Management App
 - Handles CRUD operations for managing restaurant tables.
 
 ### Models
 - **Table**
-  - `number` (IntegerField)
-  - `capacity` (IntegerField)
-  - `status` (CharField)
+  - number (IntegerField)
+  - capacity (IntegerField)
+  - status (CharField)
 
 ## Menu Management App
 - Provides CRUD functionalities for managing menu categories and items.
 
 ### Models
 - **Menu**
-  - `name` (CharField)
-  - `category` (CharField,choices)
-  - `price` (DecimalField)
-  - `description` (TextField)
+  - name (CharField)
+  - category (CharField,choices)
+  - price (DecimalField)
+  - description (TextField)
 
 ## Order Management App
 - Implements CRUD operations for managing orders placed by customers.
 
 ### Models
 - **Order**
-  - `table` (ForeignKey, Table)
-  - `items` (ManyToManyField, Menu)
-  - `total_amount` (DecimalField)
-  - `status` (CharField)
-  - `timestamp` (DateTimeField)
+  - table (ForeignKey, Table)
+  - items (ManyToManyField, Menu)
+  - total_amount (DecimalField)
+  - status (CharField)
+  - timestamp (DateTimeField)
 
 
 ## Employee Management App
@@ -45,24 +45,24 @@
 
 ### Models
 - **Waiter**
-  - `name` (CharField)
-  - `email` (EmailField)
-  - `phone_number` (CharField)
-  - `shift` (CharField)
-  - `status` (CharField)
-  - `orders` (ForeignKey, Order) 
+  - name (CharField)
+  - email (EmailField)
+  - phone_number (CharField)
+  - shift (CharField)
+  - status (CharField)
+  - orders (ForeignKey, Order) 
 
 ## Reception App
 - Manages customer check-in, reservation handling, and bill settlement functionalities.
 
 ### Models
 - **Reservation**
-  - `customer_name` (CharField)
-  - `table` (ForeignKey, Table)
-  - `reservation_time` (DateTimeField)
-  - `status` (CharField)  # e.g., confirmed, canceled
+  - customer_name (CharField)
+  - table (ForeignKey, Table)
+  - reservation_time (DateTimeField)
+  - status (CharField)  # e.g., confirmed, canceled
 
 - **Bill**
-  - `order` (ForeignKey, Order)
-  - `total_amount` (DecimalField)
-  - `paid` (BooleanField)
+  - order (ForeignKey, Order)
+  - total_amount (DecimalField)
+  - paid (BooleanField)
